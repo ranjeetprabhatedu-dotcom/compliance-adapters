@@ -3,5 +3,5 @@ dist/
 coverage/
 **/coverage/
 *.log
-.env
 .DS_Store
+config.bat
