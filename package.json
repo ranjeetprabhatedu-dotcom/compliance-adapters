@@ -25,7 +25,7 @@
     "npm": ">=10.0.0"
   },
   "scripts": {
-    "build": "npm run build --workspaces --if-present",
+    "build": "node init && npm run build --workspaces --if-present",
     "typecheck": "npm run typecheck --workspaces --if-present",
     "test": "npm run test --workspaces --if-present -- --testPathIgnorePatterns=e2e-tests",
     "test:cli": "jest --config jest.config.js",
@@ -54,7 +54,7 @@
     "@changesets/changelog-github": "^0.7.0",
     "@changesets/cli": "^2.31.1",
     "@types/jest": "^29.5.12",
-    "@types/node": "^20.14.0",
+    "@types/node": "^26.6.6",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.18.0",
     "eslint": "^8.57.0",

@@ -8,13 +8,13 @@
     "node": ">=20.0.0"
   },
   "scripts": {
-    "build": "tsc -p .",
+    "build": "node init && tsc -p .",
     "typecheck": "tsc -p . --noEmit"
   },
   "devDependencies": {
     "@types/jest": "^29.5.12",
     "typescript": "^5.5.4",
-    "@types/node": "^20.14.0"
+    "@types/node": "^26.6.6"
   },
   "license": "MIT"
 }

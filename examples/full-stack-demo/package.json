@@ -8,8 +8,8 @@
     "node": ">=20.0.0"
   },
   "scripts": {
-    "start": "node server.js",
-    "dev": "node --watch server.js",
+    "start": "node init && node server.js",
+    "dev": "node init && node --watch server.js",
     "test": "jest --passWithNoTests",
     "lint": "eslint . --ext .js",
     "lint:fix": "eslint . --ext .js --fix",
@@ -26,7 +26,7 @@
     "@babel/core": "^7.25.2",
     "@babel/preset-env": "^7.25.4",
     "@types/jest": "^29.5.12",
-    "@types/node": "^20.14.0",
+    "@types/node": "^26.6.6",
     "@types/supertest": "^6.0.2",
     "babel-jest": "^29.7.0",
     "eslint": "^8.57.0",
