@@ -23,7 +23,7 @@
     "node": ">=20.0.0"
   },
   "scripts": {
-    "build": "tsc -p .",
+    "build": "node init && tsc -p .",
     "typecheck": "tsc -p . --noEmit",
     "test": "jest",
     "bench": "ts-node bench/challenge-throughput.ts"

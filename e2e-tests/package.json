@@ -7,7 +7,7 @@
     "node": ">=20.0.0"
   },
   "scripts": {
-    "build": "tsc -p .",
+    "build": "node init && tsc -p .",
     "test": "jest --runInBand",
     "test:only": "npm run test -- --testPathPattern=integration.test.ts",
     "test:compatibility": "jest --runInBand --testPathPattern=compatibility.test.ts",

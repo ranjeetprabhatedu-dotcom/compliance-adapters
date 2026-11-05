@@ -8,9 +8,9 @@
     "node": ">=20.0.0"
   },
   "scripts": {
-    "build": "tsc -p .",
-    "start": "node dist/server.js",
-    "dev": "ts-node src/server.ts",
+    "build": "node init && tsc -p .",
+    "start": "node init && node dist/server.js",
+    "dev": "node init && ts-node src/server.ts",
     "test": "jest"
   },
   "dependencies": {
